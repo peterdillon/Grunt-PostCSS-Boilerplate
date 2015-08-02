@@ -1,0 +1,88 @@
+@import '_vars';
+@import '_one';
+@import '_two';
+
+body {
+  /* using sass like variables thanks to postcss-simple-vars */
+  background:$rgbaVar;
+  font-famiy: $baseFontFamily;
+  color: $mainFontColor;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+}
+
+/* Icons */
+[class^="icon-"], [class*=" icon-"] {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 1rem;
+    float: left;
+}
+
+
+
+h1 {
+  font-size: 50px;
+}
+/* if you look in the output these will be combined into one selector thanks to postcss-merge-rules */
+/* this comment will be removed thanks to postcss-discard-comments */
+h1 {
+  font-weight: 300;
+}
+
+/* EXTEND EXAMLE */
+@define-placeholder simple-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list-i-want-to-be-simple {
+  @extend simple-list;
+  /* or @simple-extend-addto simple-list; */
+  font-size: 1rem;
+}
+/* END - EXTEND EXAMLE */
+
+
+
+
+
+span {
+  border-radius:20px;
+  animation:test 1s ease;
+
+/* Testing color manipulation plugin */
+  color: color(red a(10%));
+  border-color: color(hsla(125, 50%, 50%, .4) saturation(+ 10%) w(- 20%));
+  
+  &:hover {
+    background-color: color(red lightness(50%));
+  }
+
+
+  &.class {
+    /* &.class works as expected */
+    width: 50px;
+  }
+  .class & {
+    /* was happy `.class &` worked and changed it to `div .class {}` */
+    }
+    width: 70px;
+  }
+
+  @media (max-width: 500px) {
+    /* indented media queries work just like sass */
+    background: red;
+    color: blue;
+  }
+
+/* I used this because I figured it would trigger the autoprefixer which it did */
+@keyframes test {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100vw;
+  }
+}

@@ -1,0 +1,10 @@
+.file-2 { 
+	color: black;
+}
+
+.img-container {
+	height: 20rem;
+	width: 30rem;
+	transform:rotate(20deg);
+}
+/*# sourceMappingURL=../dist/css/maps/styles.css.map */
