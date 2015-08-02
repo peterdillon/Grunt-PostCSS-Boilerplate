@@ -21,7 +21,7 @@ I started by looking at other peoples gruntifiles, reading docs and (admittedly)
 
 ## What PostCSS and other plugins I'm using
 
-* //-------------------------------
+```
 * CSS Build
 * require('postcss-import')(),                            // Partials imports
 * require('postcss-simple-vars')(),                       // Variables, a must
@@ -46,7 +46,7 @@ I started by looking at other peoples gruntifiles, reading docs and (admittedly)
 * http://www.grunticon.com/
 * http://pixelbuddha.net/ballicons2/index.html
 * To test I downloaded the Ballicons package, deleted everything but the svg's and put them in a unique directory to insure they were being built from scratch.
-
+```
 
 ## Demo
 
