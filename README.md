@@ -32,14 +32,14 @@ I started by looking at other peoples gruntifiles, reading docs and (admittedly)
 * require('postcss-nested')(),                       // sass nesting style
 * require('postcss-merge-rules')(),                  // Duplicate selector styles are combined
 * require('autoprefixer-core')('last 1 version'),    // Kinda awesome
-* require('postcss-discard-comments')({removeAll: true}),
+* require('postcss-discard-comments')({removeAll: true}), // Remove comments
 * require('cssnano')()                               // Minify
 
 * //-------------------------------
 * JS Build
-* "grunt-contrib-concat": "^0.5.1",
-* "grunt-contrib-jshint": "^0.11.2",
-* "grunt-contrib-uglify": "^0.9.1",
+* "grunt-contrib-concat": "^0.5.1",   // Put them all together now
+* "grunt-contrib-jshint": "^0.11.2",  // Learn better coding practices
+* "grunt-contrib-uglify": "^0.9.1",   // Compress and rebuild
 
 * //-------------------------------
 * Grunticon Build
