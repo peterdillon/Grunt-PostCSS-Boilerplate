@@ -35,17 +35,17 @@ I started by looking at other peoples gruntifiles, reading docs and (admittedly)
 * require('postcss-discard-comments')({removeAll: true}),
 * require('cssnano')()                               // Minify
 
-//-------------------------------
-JS Build
-"grunt-contrib-concat": "^0.5.1",
-"grunt-contrib-jshint": "^0.11.2",
-"grunt-contrib-uglify": "^0.9.1",
+* //-------------------------------
+* JS Build
+* "grunt-contrib-concat": "^0.5.1",
+* "grunt-contrib-jshint": "^0.11.2",
+* "grunt-contrib-uglify": "^0.9.1",
 
-//-------------------------------
-Grunticon Build
-http://www.grunticon.com/
-http://pixelbuddha.net/ballicons2/index.html
-To test I downloaded the Ballicons package, deleted everything but the svg's and put them in a unique directory to insure they were being built from scratch.
+* //-------------------------------
+* Grunticon Build
+* http://www.grunticon.com/
+* http://pixelbuddha.net/ballicons2/index.html
+* To test I downloaded the Ballicons package, deleted everything but the svg's and put them in a unique directory to insure they were being built from scratch.
 
 
 ## Demo?
