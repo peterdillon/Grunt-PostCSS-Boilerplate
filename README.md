@@ -22,6 +22,7 @@ I started by looking at other peoples gruntifiles, reading docs and (admittedly)
 ## What PostCSS and other plugins I'm using
 
 ```
+* //-------------------------------
 * CSS Build
 * require('postcss-import')(),                            // Partials imports
 * require('postcss-simple-vars')(),                       // Variables, a must
