@@ -30,7 +30,7 @@ pkg: grunt.file.readJSON('package.json'),
     },
     dist: {
       src: 'css/main.css',
-      dest: 'build/styles.css'
+      dest: 'build/css/styles.css'
         }
     },
 
@@ -41,7 +41,7 @@ pkg: grunt.file.readJSON('package.json'),
     concat: {
       basic: {
         src: ['js/grunticon-load.js', 'js/fizz-buzz.js','js/run-slick.js'],
-        dest: 'build/custom-build.js',
+        dest: 'build/js/custom-build.js',
       },
     },
     uglify: {
@@ -49,8 +49,8 @@ pkg: grunt.file.readJSON('package.json'),
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> <%= grunt.template.today("longTime") %> */\n'
       },
       build: {
-        src: 'build/custom-build.js',
-        dest: 'build/custom-build.min.js'
+        src: 'build/js/custom-build.js',
+        dest: 'build/js/custom-build.min.js'
       }
     }, 
 
