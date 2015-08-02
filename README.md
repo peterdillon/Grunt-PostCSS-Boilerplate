@@ -48,6 +48,6 @@ I started by looking at other peoples gruntifiles, reading docs and (admittedly)
 * To test I downloaded the Ballicons package, deleted everything but the svg's and put them in a unique directory to insure they were being built from scratch.
 
 
-## Demo?
+## Demo
 
 The "css/*.css" files have CSS rules that trigger the different plugins.
