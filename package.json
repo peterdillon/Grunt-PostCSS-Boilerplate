@@ -1,9 +1,9 @@
 {
-  "name": "POSTCSS4",
+  "name": "A Grunt PostCSS Boilerplate",
   "version": "0.1.0",
   "author": "Peter Dillon",
-  "description": "Smooth working version",
-  "readme": "Coming soon",
+  "description": "Finally a smooth working version.",
+  "readme": "Set up of my personal PostCSS workflow to make sure I can do all the fallbacks and functionality I use frequently from Sass and Compass.",
   "license": "MIT",
   "repository": {
     "type": "git",
