@@ -25,6 +25,7 @@ body {
 .center-me {
     top: center;
     left: center;
+    width: 80rem;
 }
 
 h1 {
