@@ -1,3 +1,4 @@
+@import '_normalize';
 @import '_vars';
 @import '_one';
 @import '_two';
@@ -20,7 +21,11 @@ body {
     float: left;
 }
 
-
+/* Testing postcss-center */
+.center-me {
+    top: center;
+    left: center;
+}
 
 h1 {
   font-size: 50px;

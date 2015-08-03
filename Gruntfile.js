@@ -23,6 +23,7 @@ pkg: grunt.file.readJSON('package.json'),
         require('postcss-simple-extend')(),
         require('postcss-nested')(),
         require('postcss-merge-rules')(),
+        // require('postcss-center')(),
         require('autoprefixer-core')('last 1 version'),
         require('postcss-discard-comments')({removeAll: true}),
         // require('cssnano')()

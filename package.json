@@ -5,6 +5,10 @@
   "description": "Smooth working version",
   "readme": "Coming soon",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fingermaster/My-Grunt-PostCSS-Boilerplate"
+  },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "cssnano": "^2.1.1",
