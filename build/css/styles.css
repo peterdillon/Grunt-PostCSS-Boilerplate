@@ -251,8 +251,9 @@ body{
     margin-right: -50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 1280px;
-    width:80rem;
+    width:80%;
+    max-width: 1280px;
+    max-width:80rem;
 }
 
 h1{
@@ -268,9 +269,6 @@ h1{
 }
 
 
-
-
-
 span{
   border-radius:20px;
   -webkit-animation:test 1s ease;
@@ -283,26 +281,17 @@ span{
   }
 
 
-
-
-
 span:hover{
   background-color:rgb(255, 0, 0);
 }
 
 
-
-
-
-span.class{
+span.amp-dot-class{
   width:50px;
 }
 
 
-
-
-
-.class span{}
+.class-space-amp span{}
 
   @media (max-width: 500px){
     background:red;

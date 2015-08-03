@@ -11,15 +11,15 @@ pkg: grunt.file.readJSON('package.json'),
   postcss: {
     options: {
       map: {
-          inline: false, // save all sourcemaps as separate files...
-          annotation: 'dist/css/maps/' // ...to the specified directory
+          inline: false, 
+          annotation: 'dist/css/maps/'
       },
       processors: [
         require('postcss-import')(),
         require('postcss-simple-vars')(),
         require('pixrem')(),
         require('postcss-color-function')(),
-        require('postcss-color-rgba-fallback')(), // For IE8
+        require('postcss-color-rgba-fallback')(),
         require('postcss-simple-extend')(),
         require('postcss-nested')(),
         require('postcss-merge-rules')(),

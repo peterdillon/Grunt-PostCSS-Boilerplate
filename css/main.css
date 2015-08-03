@@ -4,7 +4,7 @@
 @import '_two';
 
 body {
-  /* using sass like variables thanks to postcss-simple-vars */
+  /* Sass like variables: postcss-simple-vars */
   background:$rgbaVar;
   font-famiy: $baseFontFamily;
   color: $mainFontColor;
@@ -12,7 +12,7 @@ body {
   line-height: $baseLineHeight;
 }
 
-/* Icons */
+/* Icon adjustment for test page - not important */
 [class^="icon-"], [class*=" icon-"] {
     width: 100px;
     height: 100px;
@@ -25,14 +25,15 @@ body {
 .center-me {
     top: center;
     left: center;
-    width: 80rem;
+    width: 80%;
+    max-width: 80rem;
 }
 
 h1 {
   font-size: 50px;
 }
-/* if you look in the output these will be combined into one selector thanks to postcss-merge-rules */
-/* this comment will be removed thanks to postcss-discard-comments */
+/* Correctly combined into one selector: postcss-merge-rules */
+/* this comment will be removed: postcss-discard-comments */
 h1 {
   font-weight: 300;
 }
@@ -51,14 +52,11 @@ h1 {
 /* END - EXTEND EXAMLE */
 
 
-
-
-
 span {
   border-radius:20px;
   animation:test 1s ease;
 
-/* Testing color manipulation plugin */
+  /* Testing color manipulation plugin */
   color: color(red a(10%));
   border-color: color(hsla(125, 50%, 50%, .4) saturation(+ 10%) w(- 20%));
   
@@ -67,23 +65,23 @@ span {
   }
 
 
-  &.class {
+  &.amp-dot-class {
     /* &.class works as expected */
     width: 50px;
   }
-  .class & {
-    /* was happy `.class &` worked and changed it to `div .class {}` */
+  .class-space-amp & {
+    /* `.class &` worked and changed it to `div .class {}` */
     }
     width: 70px;
   }
 
   @media (max-width: 500px) {
-    /* indented media queries work just like sass */
+    /* Need to test indented media queries like sass further */
     background: red;
     color: blue;
   }
 
-/* I used this because I figured it would trigger the autoprefixer which it did */
+/* Triggers the autoprefixer */
 @keyframes test {
   0% {
     left: 0;
