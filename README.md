@@ -1,9 +1,12 @@
 # My PostCSS, JS and Grunticon Build Workflow Boilerplate
-Set up of my personal PostCSS workflow to make sure I can do all the fallbacks and functionality I use frequently from Sass and Compass.
+Set up of a PostCSS workflow to all the functionality and fallbacks I use frequently from Sass and Compass.
 
 ## Setup & Install
 
-1. I did node, grunt and each plugin one at a time, you'll have to do the same. It was a good learning process.
+1. I used node and grunt and installed each plugin one at a time. You'll have to do the same and your needs will certainly vary from mine.
+2. https://nodejs.org/download/
+3. http://gruntjs.com/getting-started
+4. https://github.com/nDmitry/grunt-postcss
 
 ### Dependencies
 
@@ -11,12 +14,11 @@ Set up of my personal PostCSS workflow to make sure I can do all the fallbacks a
 2. grunt 
 3. grunt-postcss
 4. grunticon
-5. A lot of plugins - you can find them in package.json and the Gruntfile.js
+5. Plugin names can be found in package.json and the Gruntfile.js
 
 ### Installation
 
-I started by looking at other peoples gruntifiles, reading docs and (admittedly) had a lot of trouble getting PostCSS to run in the first place. After a ton of troubleshooting, a relatively steep learning curve, starting from scratch and installing each plugin one by one 
-(building and viewing results after each install) I finally got it to just about where I "think" I can use this on a production project.
+I started by looking at other peoples gruntifiles, reading docs and (admittedly) had trouble getting PostCSS to run in the first place. After a ton of troubleshooting, I finally got it to just about where I "think" I can use this on a production project. Now it is here for you to use as a reference and starting point.
 
 
 ## What PostCSS and other plugins I'm using
@@ -53,4 +55,4 @@ were being built from scratch.
 
 ## Demo
 
-The "css/*.css" files have CSS rules that trigger the different plugins.
+The "css/*.css" files have some comments and CSS rules that trigger the different plugins.
