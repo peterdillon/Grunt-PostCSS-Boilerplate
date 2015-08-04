@@ -1,5 +1,5 @@
 # My PostCSS, JS and Grunticon Build Workflow Boilerplate
-Set up of a PostCSS workflow to all the functionality and fallbacks I use frequently from Sass and Compass.
+Set up of a PostCSS workflow that has all the functionality and fallbacks I use frequently from Sass and Compass.
 
 ## Setup & Install
 
