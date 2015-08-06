@@ -3,16 +3,32 @@
 @import '_one';
 @import '_two';
 
+/* Correctly removes comments - postcss-discard-comments */
+
+
+/* Testing font-magician plugin */
+div {
+  font-family: "notify";
+}
+
+
+/* Testing font-pack plugin */
+.foo {
+    font: 1rem/1.2 roboto;
+}
+/* END - Testing  font-pack plugin */
+
+
 body {
   /* Sass like variables: postcss-simple-vars */
   background:$rgbaVar;
-  font-famiy: $baseFontFamily;
   color: $mainFontColor;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
+
 }
 
-/* Icon adjustment for test page - not important */
+/* Icon layout for test page - not important */
 [class^="icon-"], [class*=" icon-"] {
     width: 100px;
     height: 100px;
@@ -29,11 +45,10 @@ body {
     max-width: 80rem;
 }
 
+/* Correctly combined into one selector: postcss-merge-rules */
 h1 {
   font-size: 50px;
 }
-/* Correctly combined into one selector: postcss-merge-rules */
-/* this comment will be removed: postcss-discard-comments */
 h1 {
   font-weight: 300;
 }

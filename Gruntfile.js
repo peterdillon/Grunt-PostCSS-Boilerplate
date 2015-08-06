@@ -15,6 +15,8 @@ pkg: grunt.file.readJSON('package.json'),
           annotation: 'dist/css/maps/'
       },
       processors: [
+        // require('postcss-font-pack')({packs: require('./font-packs.json')}),
+        require('postcss-font-magician')({ hosted: '../fonts'}),
         require('postcss-import')(),
         require('postcss-simple-vars')(),
         require('pixrem')(),
@@ -67,11 +69,22 @@ pkg: grunt.file.readJSON('package.json'),
         options: {
         }
       }
+    },
+
+    serve: {
+        options: {
+            port: 9000,
+            output: 'index.htm'
+      },
     }
+
 
 });
 
-grunt.registerTask('default', ['postcss', 'jshint', 'concat', 'uglify', 'grunticon:projectIcons']);
+
+
+
+grunt.registerTask('default', ['postcss', 'jshint', 'concat', 'uglify', 'grunticon:projectIcons', 'serve']);
 
 };
 

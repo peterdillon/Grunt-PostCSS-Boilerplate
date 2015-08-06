@@ -1,5 +1,4 @@
 $mainFontColor: #000;
-$baseFontFamily: 'Roboto', Helvetica, Arial, sans-serif;
-$baseFontSize:   1rem;
-$baseLineHeight: 1.5;
 $rgbaVar: rgba(153, 221, 153, 0.8);
+$baseFontSize: 1rem;
+$baseLineHeight: 2;

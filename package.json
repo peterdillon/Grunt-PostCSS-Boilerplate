@@ -1,5 +1,5 @@
 {
-  "name": "A Grunt PostCSS Boilerplate",
+  "name": "A-Grunt-PostCSS-Boilerplate",
   "version": "0.1.0",
   "author": "Peter Dillon",
   "description": "Finally a smooth working version.",
@@ -18,6 +18,8 @@
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-grunticon": "^2.2.1",
     "grunt-postcss": "^0.5.5",
+    "grunt-postcss-import": "0.0.1",
+    "grunt-serve": "^0.1.6",
     "load-grunt-tasks": "^3.2.0",
     "npm": "^2.13.3",
     "pixrem": "^1.3.1",
@@ -25,6 +27,7 @@
     "postcss-color-function": "^1.3.2",
     "postcss-color-rgba-fallback": "^1.3.1",
     "postcss-discard-comments": "^1.2.0",
+    "postcss-font-magician": "^1.3.0",
     "postcss-import": "^6.2.0",
     "postcss-merge-rules": "^1.3.1",
     "postcss-nested": "^0.3.2",
