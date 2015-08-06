@@ -26,6 +26,7 @@ I started by looking at other peoples gruntifiles, reading docs and (admittedly)
 ```
 //-------------------------------
 CSS Build
+require('postcss-font-magician')({ hosted: '../fonts'}), // Font face builder
 require('postcss-import')(),                    // Partials imports
 require('postcss-simple-vars')(),               // Variables, a must
 require('pixrem')(),                            // User rem measurements and it writes fallback/current/future compliant sizes
@@ -51,7 +52,18 @@ http://pixelbuddha.net/ballicons2/index.html
 To test I downloaded the Ballicons package, deleted everything 
 but the svg's and put them in a unique directory to insure they 
 were being built from scratch.
+
+//-------------------------------
+Server
+grunt-serve
+serve: {
+        options: {
+            port: 9000,
+            output: 'index.htm'
+      },
+    }
 ```
+I can't get it load the index automatically as an alias or task - any help or guidance would be appreciated.
 
 ## Demo
 
