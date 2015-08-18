@@ -4,10 +4,13 @@
 		<title>Icons Preview!</title>
 		<meta charset="utf-8">
 		<link href="build/css/styles.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<script>!function(){function e(e,n,t,o){"use strict";var a=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],d=window.document.styleSheets;return a.rel="stylesheet",a.href=e,a.media="only x",o&&(a.onload=o),i.parentNode.insertBefore(a,i),a.onloadcssdefined=function(n){for(var t,o=0;o<d.length;o++)d[o].href&&d[o].href.indexOf(e)>-1&&(t=!0);t?n():setTimeout(function(){a.onloadcssdefined(n)})},a.onloadcssdefined(function(){a.media=t||"all"}),a}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(a,i){"use strict";if(a&&3===a.length){var d=t.navigator,r=t.document,l=t.Image,s=!(!r.createElementNS||!r.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!r.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===d.userAgent.indexOf("Chrome")||-1!==d.userAgent.indexOf("Series40")),c=new l;c.onerror=function(){o.method="png",o.href=a[2],e(a[2])},c.onload=function(){var t=1===c.width&&1===c.height,d=a[t&&s?0:t?1:2];t&&s?o.method="svg":t?o.method="datapng":o.method="png",o.href=d,n(e(d),i)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",r.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this)}();grunticon(["build/svg/icons.data.svg.css", "build/svg/icons.data.png.css", "build/svg/icons.fallback.css"], grunticon.svgLoadedCallback);
+		</script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
-		<div class="center-me">
+		<div class="container">
+			<h2>SVG Icons - Ballicons</h2>
 			<div class="icon-ad"></div>
 			<div class="icon-bill"></div>
 			<div class="icon-bowling"></div>
@@ -38,11 +41,33 @@
 			<div class="icon-wacom"></div>
 			<div class="icon-workspace"></div>
 			<div class="icon-wrench"></div>
+
+			<h2>Font Icons</h2>
+			<div class="fonticon icon-info"></div>
+			<div class="fonticon icon-bell"></div>
+			<div class="fonticon icon-headphones"></div>
+			<div class="fonticon icon-comments"></div>
+
+			<h2>Material Design Icons Static -
+				<a href="https://github.com/jonathantneal/postcss-font-magician/issues/5">Github request for plugin</a>
+			</h2>
+			<div class="material-icons"><img src='build/material-design/ic_3d_rotation_24px.svg'></div>
+			<div class="material-icons"><img src='build/material-design/ic_accessibility_24px.svg'></div>
+			<div class="material-icons"><img src='build/material-design/ic_account_balance_24px.svg'></div>
+			<div class="material-icons"><img src='build/material-design/ic_account_balance_wallet_24px.svg'></div>
+			<div class="material-icons"><img src='build/material-design/ic_account_box_24px.svg'></div>
+			<div class="material-icons"><img src='build/material-design/ic_account_circle_24px.svg'></div>
+			<div class="material-icons"><img src='build/material-design/ic_add_shopping_cart_24px.svg'></div>
 		</div>
-		<!-- TODO: Will condense slick and add jquery as an updated package later -->
+		
+
+		
+
+
+		<!-- TODO: Will condense slick and add jquery as an updated package later 
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="build/js/slick.min.js"></script>
-		<script src="build/js/custom-build.min.js"></script>
+		<script src="build/js/custom-build.min.js"></script>-->
 		<noscript><link href="build/svg/icons.fallback.css" rel="stylesheet"></noscript>
 
 	</body>

@@ -1,7 +1,8 @@
 {
   "name": "A-Grunt-PostCSS-Boilerplate",
   "version": "0.1.0",
-  "author": "Peter Dillon",
+  "author": "Peter Dillon <fingermaster@gmail.com>",
+  "homepage": "https://github.com/fingermaster/My-Grunt-PostCSS-Boilerplate",
   "description": "Finally a smooth working version.",
   "readme": "Set up of my personal PostCSS workflow to make sure I can do all the fallbacks and functionality I use frequently from Sass and Compass.",
   "license": "MIT",
@@ -9,13 +10,23 @@
     "type": "git",
     "url": "https://github.com/fingermaster/My-Grunt-PostCSS-Boilerplate"
   },
+  "keywords": [
+    "postcss",
+    "grunt",
+    "boilerplate",
+    "css",
+    "postcss-plugins",
+    "web"
+  ],
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "cssnano": "^2.1.1",
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.11.2",
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-grunticon": "^2.2.1",
     "grunt-postcss": "^0.5.5",
     "grunt-postcss-import": "0.0.1",

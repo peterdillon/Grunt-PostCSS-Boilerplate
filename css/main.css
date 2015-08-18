@@ -2,13 +2,29 @@
 @import '_vars';
 @import '_one';
 @import '_two';
+@import '_icons';
 
-/* Correctly removes comments - postcss-discard-comments */
+@font-face {
+  font-family: 'notify';
+  src: url("../fonts/notify.eot");
+  src: url("../fonts/notify.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/notify.ttf") format("truetype"), 
+  url("../fonts/notify.woff") format("woff"), 
+  url("../fonts/notify.svg#notify") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  font-family: 'Work Sans';
+  font-weight: 400;*/
 
 
-/* Testing font-magician plugin */
-div {
-  font-family: "notify";
+div.material-icons {
+  font-size: 1.5rem;
+  display: block;
+  color: #333;
+  line-height: 1.5rem;
+  float: left;
 }
 
 
@@ -36,6 +52,39 @@ body {
     margin: 1rem;
     float: left;
 }
+p {
+  float: left;
+}
+/* Testing font-magician plugin */
+div.fonticon {
+  font-family: "notify";
+  line-height: 1;
+  font-size: 6.6rem;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  float: left;
+  color: #333;
+}
+
+.material-icons {
+  margin: 1rem;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  float: left;
+  color: #333;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  img {
+    width: 6.6rem;
+  }
+}
 
 /* Testing postcss-center */
 .center-me {
@@ -43,6 +92,11 @@ body {
     left: center;
     width: 80%;
     max-width: 80rem;
+}
+.container {
+  width: 80%;
+  max-width: 80rem; 
+  margin: 1rem auto;
 }
 
 /* Correctly combined into one selector: postcss-merge-rules */

@@ -16,7 +16,7 @@ pkg: grunt.file.readJSON('package.json'),
       },
       processors: [
         // require('postcss-font-pack')({packs: require('./font-packs.json')}),
-        require('postcss-font-magician')({ hosted: '../fonts'}),
+        require('postcss-font-magician')({}),
         require('postcss-import')(),
         require('postcss-simple-vars')(),
         require('pixrem')(),
@@ -71,20 +71,45 @@ pkg: grunt.file.readJSON('package.json'),
       }
     },
 
-    serve: {
+  connect: {
+      server: {
+        options: {
+          port: 9000,
+          // base: 'www-root'
+        }
+      }
+    },
+
+   livereload: {
         options: {
             port: 9000,
-            output: 'index.htm'
+            base: 'index.htm'
+      },
+    },
+
+    watch: {
+      css: {
+        files: 'css/*.css',
+        tasks: ['postcss'],
+        options: {
+          livereload: true       
+        },
       },
     }
-
+    
+    // serve: {
+    //     options: {
+    //         port: 9000,
+    //         base: '/'
+    //   },
+    // },
 
 });
 
 
 
-
-grunt.registerTask('default', ['postcss', 'jshint', 'concat', 'uglify', 'grunticon:projectIcons', 'serve']);
+//'serve',
+grunt.registerTask('default', ['postcss', 'jshint', 'concat', 'uglify', 'grunticon:projectIcons', 'connect', 'watch']);
 
 };
 

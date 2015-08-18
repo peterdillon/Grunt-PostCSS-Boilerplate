@@ -63,7 +63,7 @@ serve: {
       },
     }
 ```
-I can't get it load the index automatically as an alias or task - any help or guidance would be appreciated.
+Is grunt-serve able to load the index automatically?
 
 ## Demo
 

@@ -1,0 +1,76 @@
+
+.icon-info:before {
+  content: "\e600";
+}
+
+.icon-new:before {
+  content: "\e601";
+}
+
+.icon-flag:before {
+  content: "\e602";
+}
+
+.icon-warning:before {
+  content: "\e603";
+}
+
+.icon-bell:before {
+  content: "\e604";
+}
+
+.icon-phone:before {
+  content: "\e609";
+}
+
+.icon-pie:before {
+  content: "\e60d";
+}
+
+.icon-bars:before {
+  content: "\e60e";
+}
+
+.icon-add:before {
+  content: "\e605";
+}
+
+.icon-subtract:before {
+  content: "\e606";
+}
+
+.icon-exclamation:before {
+  content: "\e607";
+}
+
+.icon-close:before {
+  content: "\e608";
+}
+
+.icon-phone-hang-up:before {
+  content: "\e60a";
+}
+
+.icon-phone2:before {
+  content: "\e60b";
+}
+
+.icon-headphones:before {
+  content: "\e60c";
+}
+
+.icon-clock:before {
+  content: "\e60f";
+}
+
+.icon-comments:before {
+  content: "\e610";
+}
+
+.icon-pie2:before {
+  content: "\e611";
+}
+
+.icon-stats:before {
+  content: "\e612";
+}

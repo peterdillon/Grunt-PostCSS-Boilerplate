@@ -136,6 +136,12 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+h2 {
+  font-size: 2em;
+  margin: 1rem 0;
+  width: 100%;
+  float: left;
+}
 
 /**
  * Address styling not present in IE 8/9.

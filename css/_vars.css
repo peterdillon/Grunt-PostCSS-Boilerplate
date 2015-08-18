@@ -1,4 +1,5 @@
 $mainFontColor: #000;
 $rgbaVar: rgba(153, 221, 153, 0.8);
+$rgbaVar-Dark: color( $rgbaVar blackness( 30% ));
 $baseFontSize: 1rem;
 $baseLineHeight: 2;
