@@ -63,7 +63,6 @@ serve: {
       },
     }
 ```
-Is grunt-serve able to load the index automatically?
 
 ## Demo
 
