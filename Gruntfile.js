@@ -71,6 +71,7 @@ pkg: grunt.file.readJSON('package.json'),
       }
     },
 
+// Server Run
   connect: {
       server: {
         options: {
