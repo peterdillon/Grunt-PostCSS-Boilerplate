@@ -18,7 +18,7 @@ Set up of a PostCSS workflow that has all the functionality and fallbacks I use 
 
 ### Installation
 
-I started by looking at other peoples gruntifiles, reading docs and (admittedly) had trouble getting PostCSS to run in the first place. After a ton of troubleshooting, I finally got it to just about where I "think" I can use this on a production project. Now it is here for you to use as a reference and starting point.
+After a ton of troubleshooting, I finally got it to just about where I "think" I can use this on a production (IE8) project. Now it is here for you to use as a reference and starting point.
 
 
 ## What PostCSS and other plugins I'm using
