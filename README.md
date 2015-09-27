@@ -1,5 +1,5 @@
 # My PostCSS, JS and Grunticon Build Workflow Boilerplate
-Set up of a PostCSS workflow that has all the functionality and fallbacks I use frequently from Sass and Compass.
+Set up of a PostCSS workflow with SVG icons, color opacity, autoprefixer (and more) that has all the functionality and fallbacks I use frequently from Sass and Compass to accomodate an IE8 project. That's right, IE8.
 
 ## Setup & Install
 
@@ -18,7 +18,7 @@ Set up of a PostCSS workflow that has all the functionality and fallbacks I use 
 
 ### Installation
 
-After a ton of troubleshooting, I finally got it to just about where I "think" I can use this on a production (IE8) project. Now it is here for you to use as a reference and starting point.
+After a ton of troubleshooting, I finally got it to just about where I believe I can use this on a production project with all the necessary fallbacks for IE8 - and all the future proofing I could think of. Now it is here for you to use as a reference and starting point.
 
 
 ## What PostCSS and other plugins I'm using
